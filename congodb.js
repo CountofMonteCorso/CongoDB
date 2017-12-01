@@ -56,12 +56,12 @@ connection.connect(function(err) {
 							connection.query(
 								"UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?", 
 								[userInput.qtyquery, userInput.query], function(err, res){
-									if (stock_quantity > 0){
+									// if (stock_quantity > 0){
 										console.log("here's ur stuff k bye");
-									}
-									else {
-										console.log("sry. we're out dude.")
-									}
+									// }
+									// else {
+									// 	console.log("sry. we're out dude.")
+									// }
 								});									
 				});
 		}
